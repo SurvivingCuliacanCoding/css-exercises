@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+
+        function add7(number) {
+
+            return number + 7
+
+
+            
+
+        }
+
+        console.log(add7(8))
+
+
+        function multiply(a,b) {
+
+
+            return a * b 
+        }
+
+        console.log(multiply(5,5))
+
+        
+
+        function capitalize(texto) {
+
+            if(typeof texto !== "string") {
+
+                throw new Error("necesita ser una string")
+                
+                
+            }
+
+
+            return texto[0].toUpperCase() + texto.slice(1).toLowerCase();
+
+
+            
+        }
+
+        console.log(capitalize("abcd"))
+
+
+
+        function thelast(string) {
+
+
+            if(typeof string !== "string") {
+
+                throw new Error("necesita ser una string")
+            }
+
+            return string.slice( -1 );
+        }
+
+
+        console.log(thelast("comida"))
+        
+
+        
+    </script>
+    
+</body>
+</html>
